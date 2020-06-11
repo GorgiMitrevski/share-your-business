@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vnesuvanje">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/RL1"
+        >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"/>
+
+        <ImageButton
+            android:id="@+id/ServicesImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            app:srcCompat="@drawable/services" />
+
+        <ImageButton
+            android:id="@+id/FunImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_marginLeft="115dp"
+            app:srcCompat="@drawable/fun" />
+
+        <ImageButton
+            android:id="@+id/IndustryImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="220dp"
+            app:srcCompat="@drawable/industry" />
+
+        <ImageButton
+            android:id="@+id/EducationImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="320dp"
+            app:srcCompat="@drawable/education" />
+
+        <TextView
+            android:id="@+id/ServicesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Services" />
+        <TextView
+            android:id="@+id/FunText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Fun" />
+        <TextView
+            android:id="@+id/IndustryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Industry" />
+        <TextView
+            android:id="@+id/EducationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Education" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <EditText
+        android:id="@+id/Ime"
+        android:layout_width="400dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name of company"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/Adresa"
+        android:layout_width="400dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:inputType="text"
+        android:hint="Address of company"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/Latitude"
+        android:layout_width="180dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Latitude"
+        android:layout_marginTop="140dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/Longitude"
+        android:layout_width="180dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Longitude"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="220dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="399dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="E-mail address of Company"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Telefon"
+        android:layout_width="399dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Telephone number"
+        android:layout_marginTop="300dp"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/WebSite"
+        android:layout_width="399dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Company WEB-Site"
+        android:layout_marginTop="370dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/Kategorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:textSize="19dp"
+        android:layout_marginTop="440dp"/>
+
+    <CheckBox
+        android:id="@+id/Services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        android:onClick="selectItem"
+        android:layout_marginTop="470dp" />
+
+    <CheckBox
+        android:id="@+id/Fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun"
+        android:onClick="selectItem"
+        android:layout_marginTop="510dp"/>
+
+    <CheckBox
+        android:id="@+id/Industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry"
+        android:onClick="selectItem"
+        android:layout_marginTop="550dp"/>
+
+    <CheckBox
+        android:id="@+id/Education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:onClick="selectItem"
+        android:layout_marginTop="590dp"/>
+
+
+
+    <Button
+        android:layout_width="410dp"
+        android:layout_height="62dp"
+        android:background="@color/grey"
+        android:text="Save"
+        android:layout_marginTop="670dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnSave"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

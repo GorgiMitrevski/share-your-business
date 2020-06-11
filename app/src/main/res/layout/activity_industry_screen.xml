@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndustryScreen"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true">
+        <!-- include na toolbar-->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"/>
+
+        <ImageButton
+            android:id="@+id/ServicesImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            app:srcCompat="@drawable/services" />
+
+        <ImageButton
+            android:id="@+id/FunImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_marginLeft="115dp"
+            app:srcCompat="@drawable/fun" />
+
+
+        <ImageButton
+            android:id="@+id/IndustryImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="220dp"
+            app:srcCompat="@drawable/industry" />
+
+        <ImageButton
+            android:id="@+id/EducationImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="320dp"
+            app:srcCompat="@drawable/education" />
+
+        <TextView
+            android:id="@+id/ServicesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Services" />
+        <TextView
+            android:id="@+id/FunText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Fun" />
+        <TextView
+            android:id="@+id/IndustryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="62dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:text="Industry" />
+        <TextView
+            android:id="@+id/EducationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="62dp"
+            android:textSize="17dp"
+            android:text="Education" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/lvRelLayout"
+        android:layout_above="@id/RLsearch">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"></ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:id="@+id/RLsearch">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/searchFilter"
+            android:hint="SEARCH.."
+            android:drawableLeft="@drawable/searchicon"
+            android:drawablePadding="10dp"
+            ></EditText>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

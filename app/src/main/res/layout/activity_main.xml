@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Zdravo, izberete oblast \n na kompanija so klik \n  na slikite pogore!" />
+
+    <ImageButton
+        android:id="@+id/ServicesImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        app:srcCompat="@drawable/services" />
+
+    <ImageButton
+        android:id="@+id/FunImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginLeft="115dp"
+        app:srcCompat="@drawable/fun" />
+
+    <ImageButton
+        android:id="@+id/IndustryImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginLeft="220dp"
+        app:srcCompat="@drawable/industry" />
+
+    <ImageButton
+        android:id="@+id/EducationImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginLeft="320dp"
+        app:srcCompat="@drawable/education" />
+
+    <TextView
+        android:id="@+id/ServicesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="62dp"
+        android:textSize="17dp"
+        android:text="Services" />
+
+
+    <TextView
+        android:id="@+id/FunText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="62dp"
+        android:textSize="17dp"
+        android:text="Fun" />
+
+    <TextView
+        android:id="@+id/IndustryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="62dp"
+        android:textSize="17dp"
+        android:text="Industry" />
+
+    <TextView
+        android:id="@+id/EducationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="62dp"
+        android:textSize="17dp"
+        android:text="Education" />
+
+
+
+</RelativeLayout>
